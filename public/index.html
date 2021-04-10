@@ -4,7 +4,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Welcome to Firebase Hosting</title>
 
 <!-- update the version number as needed -->
 <script defer src="/__/firebase/8.3.3/firebase-app.js"></script>
@@ -46,55 +45,280 @@
     <link href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet"> -->
 
 <!-- Template Main CSS File -->
-<link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-<div id="message">
-<h2>Welcome</h2>
-<h1>Firebase Hosting Setup Complete</h1>
-<p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-<a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<!-- ======= Top Bar ======= -->
+<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top fifthColor">
+<div class="container d-flex">
+<div class="contact-info mr-auto">
+<i class="icofont-envelope"></i> <a href="mailto:">cmpadrefantino@claro.net.do</a>
+<i class="icofont-phone"></i> 809 - 573 - 2533
+<i class="icofont-google-map"></i> C/ Gral. Juan Rodríguez #83, La Vega
 </div>
-<p id="load">Firebase SDK Loading&hellip;</p>
+<div class="social-links">
+<a href="https://www.facebook.com/CMPadreFantino/" class="facebook"><i class="icofont-facebook"></i></a>
+<a href="https://www.instagram.com/cmpadrefantino/" class="instagram"><i
+                        class="icofont-instagram"></i></a>
+</div>
+</div>
+</div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const loadEl = document.querySelector('#load');
-    // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    // // The Firebase SDK is initialized and available here!
-    //
-    // firebase.auth().onAuthStateChanged(user => { });
-    // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-    // firebase.firestore().doc('/foo/bar').get().then(() => { });
-    // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-    // firebase.messaging().requestPermission().then(() => { });
-    // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-    // firebase.analytics(); // call to activate
-    // firebase.analytics().logEvent('tutorial_completed');
-    // firebase.performance(); // call to activate
-    //
-    // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top primaryColor">
+<div class="container d-flex align-items-center">
 
-    try {
-        let app = firebase.app();
-        let features = [
-            'auth',
-            'database',
-            'firestore',
-            'functions',
-            'messaging',
-            'storage',
-            'analytics',
-            'remoteConfig',
-            'performance',
-        ].filter(feature => typeof app[feature] === 'function');
-        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-    } catch (e) {
-        console.error(e);
-        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-    }
-});
+<!-- <h4 class="logo mr-auto"><a href="index.html">Centro Médico Padre Fantino</a></h4> -->
+<!-- Uncomment below if you prefer to use an image logo class= mr-auto-->
+<!-- <a href="index.html" class="logo"><img src="assets/img/icons/home.png" alt="" class="img-fluid"></a> -->
+<a href="index.html" class="logoIcon">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-house-door-fill img-fluid" viewBox="0 0 16 16">
+                    <path
+                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+                </svg>
+</a>
+
+<nav class="nav-menu d-none d-lg-block">
+<ul>
+<li class="active"><a href="index.html">Inicio</a></li>
+<li><a href="index.html#about">Acerca de Nosotros</a></li>
+<li><a href="./sites/medicalStaff.html">Equipo Médico</a></li>
+<!-- <li><a href="./sites/specialties.html">Especialidades</a></li> -->
+<li><a href="./sites/services.html">Servicios</a></li>
+<!-- <li><a href="#news">Noticias y Actualidades</a></li> -->
+<li><a href="./sites/contact.html">Contáctenos</a></li>
+
+</ul>
+</nav>
+<!-- .nav-menu -->
+</div>
+</header>
+<!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+<div class="container-fluid">
+<div class="row text-center">
+<div class="col">
+<h1>Bienvenido</h1><br>
+<h2>El Centro Médico Padre Fantino es... <span style="font-weight: 700;font-style: italic;">Salud!</span></h2>
+</div>
+<div class="col-sm-6 d-none d-md-block">
+<img id="CMPFLogo" alt="Logo" src="./assets/img/android-chrome-dark512x512.png">
+</div>
+</div>
+</div>
+</section>
+<!-- End Hero -->
+
+<!-- ======= Why Us Section ======= -->
+<section id="why-us" class="why-us">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 d-flex align-items-stretch">
+<div class="content">
+<h3>Por qué elegirnos?</h3>
+<p>
+Somos una institución pionera en salud, con más de <strong>50 años</strong> ofreciendo nuestros servicios de forma íntegra, eficaz y con precios competitivos en el mercado.
+</p>
+<p>
+Contamos con tecnología vanguardista y personal altamente capacitado, enfocado en entregar resultados de primera calidad.
+</p>
+</div>
+</div>
+<div class="col-lg-8 d-flex align-items-stretch">
+<div class="icon-boxes d-flex flex-column justify-content-center">
+<div class="row">
+<div class="col-xl-4 d-flex align-items-stretch">
+<div class="icon-box mt-4 mt-xl-0">
+<img class="iconSize" alt="mision" src="./assets/img/icons/startup.png">
+<h4>Nuestra Misión</h4>
+<p>Proporcionamos bienestar integral y satisfacción a nuestros clientes, prestando servicios y asistencia en salud, humanizados, con alta calidad técnica y diagnostica, a precios competitivos.</p>
+</div>
+</div>
+<div class="col-xl-4 d-flex align-items-stretch">
+<div class="icon-box mt-4 mt-xl-0">
+<img class="iconSize" alt="vision" src="./assets/img/icons/presentation.png">
+<h4>Nuestra Visión</h4>
+<p>Ser el centro de servicios de salud de atención primaria y especializada, más importante de la región del Cibao, reconocido por su calidad profesional, por la incorporación continua de tecnología vanguardista.</p>
+</div>
+</div>
+<div class="col-xl-4 d-flex align-items-stretch">
+<div class="icon-box mt-4 mt-xl-0">
+<img class="iconSize" alt="values" src="./assets/img/icons/partnership.png">
+<h4>Nuestros Valores</h4>
+<p>Servicio<br> Calidad
+<br> Ética
+<br> Actualización
+</p>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- End .content-->
+</div>
+</div>
+</div>
+</section>
+<!-- End Why Us Section -->
+
+<!-- ======= Introduction Section ======= -->
+<section id="about" class="intro">
+<div class="container marketing">
+<hr class="featurette-divider">
+<div class="row aboutTitle">
+<div class="col">
+<h2>Acerca de Nosotros</h2>
+</div>
+</div>
+<div class="row featurette">
+<div class="col-md-5">
+<img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Our Team" src="./assets/img/gallery/building2.jpg">
+</div>
+<div class="col-md-7">
+<h2 class="featurette-heading">Nuestra Ubicación.</h2>
+<p class="lead">El Centro Médico Padre Fantino SRL está ubicado en la intercepción de las calles Gral. Juan Rodríguez y Padre Fantino de la ciudad de La Vega, frente a la Plaza del mismo nombre. Es uno de los centros de salud privados, pionero y más vanguardista de la
+provincia y la región. Surge por la motivación del desaparecido Dr. José A. Salcedo L y sus principales socios fundadores como una respuesta a las necesidades de la población vegana de contar con un centro que albergara todas las especialidades médicas,
+realizara todos los procedimientos y estudios diagnósticos de forma integrada y brindara servicios altamente calificados a un costo asequible.</p>
+</div>
+</div>
+<div class="row featurette">
+<div class="col-md-5">
+<img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Our Team" src="./assets/img/gallery/building1.jpg">
+</div>
+<div class="col-md-7">
+<h2 class="featurette-heading">Nuestro Inicio.</h2>
+<p class="lead">Comenzó sus operaciones el 23 de noviembre de 1968. En la parte institucional, su administración está a cargo de un Consejo de Administración compuesto por siete miembros, accionistas fundadores mayoritarios. La parte gerencial está presidida por una
+Gerencia general y Financiera y una Dirección Médica apoyados por una Subdirección Médica, un Staff de Especialistas, una Subgerencia Administrativa y de Relaciones Públicas así como un competente equipo de catorce Encargados Departamentales con sus sub-unidades,
+complementados por un equipo de Asesores y colaboradores outsourcing para áreas específicas.</p>
+</div>
+<!-- <div class="col-md-12">
+                        <p class="lead">Cuenta con la más avanzada tecnología, un cuerpo médico especializado altamente calificado, un personal paramédico y administrativo bien integrado, distribuido en los Dptos. de:</p>
+                        <ul>
+                            <li><strong>Enfermería:</strong> con las subunidades de cuidados intensivos, cirugía, neonatología y vacunación;</li>
+                            <li><strong>Urgencias Médicas:</strong> adultos y niños, Sala de cirugía menor y consulta médica.</li>
+                            <li><strong>Radiología e Imágenes:</strong> con las Subunidades de rayos x, tomografía, sonografía, mamografía, densitometría, fluoroscopía;</li>
+                            <li><strong>Laboratorio:</strong> con las Subunidades de bacteriología y hemoterapia;</li>
+                            <li><strong>Administrativo:</strong> con las Subunidades de caja, compras, cxp, cxc, admisión, información, mensajería, mantenimiento, servicio al cliente;</li>
+                            <li><strong>Recursos Humanos.</strong></li>
+                            <li><strong>Farmacia:</strong> Interna y Externa.</li>
+                            <li><strong>Seguros e Igualas Médicas:</strong> con las subunidades de reclamación, liquidación, auditoría, hospitalización y servicios ambulatorios.</li>
+                            <li><strong>Servicios Generales:</strong> con las Subunidades de cocina, lavandería, cafetería, consejería.</li>
+                        </ul>
+                    </div> -->
+</div>
+</div>
+
+<!-- </div> -->
+</section>
+
+<!-- ======= Management Team Section ======= -->
+<section id="managementTeam">
+<div class="container img-fluid rounded">
+<hr class="featurette-divider">
+<div class="row managementTitle">
+<div class="col">
+<h2>Conozca nuestro Equipo Gerencial</h2>
+</div>
+</div>
+<div class="row">
+<div class="specialists col">
+<img src="./assets/img/testimonials/testimonials-1.jpg" class="img-thumbnail" alt="A generic square placeholder image with rounded corners in a figure.">
+<figcaption class="figure-caption">Nombre</figcaption>
+<figcaption class="figure-caption">Posición</figcaption>
+<figcaption class="figure-caption">Departamento</figcaption>
+</div>
+<div class="specialists col">
+<img src="./assets/img/testimonials/testimonials-2.jpg" class="img-thumbnail" alt="A generic square placeholder image with rounded corners in a figure.">
+<figcaption class="figure-caption">Nombre</figcaption>
+<figcaption class="figure-caption">Posición</figcaption>
+<figcaption class="figure-caption">Departamento</figcaption>
+</div>
+<div class="specialists col">
+<img src="./assets/img/testimonials/testimonials-3.jpg" class="img-thumbnail" alt="A generic square placeholder image with rounded corners in a figure.">
+<figcaption class="figure-caption">Nombre</figcaption>
+<figcaption class="figure-caption">Posición</figcaption>
+<figcaption class="figure-caption">Departamento</figcaption>
+</div>
+<div class="specialists col">
+<img src="./assets/img/testimonials/testimonials-4.jpg" class="img-thumbnail" alt="A generic square placeholder image with rounded corners in a figure.">
+<figcaption class="figure-caption">Nombre</figcaption>
+<figcaption class="figure-caption">Posición</figcaption>
+<figcaption class="figure-caption">Departamento</figcaption>
+</div>
+<div class="specialists col">
+<img src="./assets/img/testimonials/testimonials-5.jpg" class="img-thumbnail" alt="A generic square placeholder image with rounded corners in a figure.">
+<figcaption class="figure-caption">Nombre</figcaption>
+<figcaption class="figure-caption">Posición</figcaption>
+<figcaption class="figure-caption">Departamento</figcaption>
+</div>
+</div>
+
+</section>
+<!-- ======= Management Team Section ======= -->
+
+<!-- End Introduction Section -->
+
+<!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+<div class="container d-md-flex py-4">
+<div class="mr-md-auto text-md-left">
+<div class="copyright">
+&copy;<strong><span> Centro Médico Padre Fantino</span></strong>. Todos los derechos reservados
+<br><br>
+<p>
+<strong>Dirección:</strong> Juan Rodríguez #83, La Vega, R.D.<br>
+<strong>Teléfono:</strong> 809 - 573 - 2533<br>
+<strong>Correo:</strong> cmpadrefantino@claro.net.do<br>
+</p>
+</div>
+<div class="credits">
+<p>
+Diseñado por <a href="https://www.linkedin.com/in/laia-b-b1b4b479/">Laia Bordas</a><br> Iconos por <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+<!-- Plantilla por <a href="https://bootstrapmade.com/">BootstrapMade</a><br> -->
+</p>
+</div>
+</div>
+<div class="social-links text-center text-md-right pt-3 pt-md-0">
+<a href="https://www.facebook.com/CMPadreFantino/" class="facebook"><i class="bx bxl-facebook"></i></a>
+<a href="https://www.instagram.com/cmpadrefantino/" class="instagram"><i
+                        class="bx bxl-instagram"></i></a>
+</div>
+</div>
+</footer>
+<!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<!-- <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script> -->
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<!-- Adding Firebase App -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.3.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.3.3/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
 </script>
 </body>
 
