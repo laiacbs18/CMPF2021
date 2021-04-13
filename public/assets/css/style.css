@@ -662,9 +662,7 @@ h6 {
 }
 
 .heroIcons {
-    max-width: 3rem;
-    padding-bottom: 2rem;
-    fill: #016390 !important;
+    margin-bottom: 2rem !important;
 }
 
 
