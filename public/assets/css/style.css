@@ -663,6 +663,8 @@ h6 {
 
 .heroIcons {
     margin-bottom: 2rem !important;
+    width: 3rem !important;
+    height: auto;
 }
 
 
