@@ -562,16 +562,6 @@ h6 {
     outline: none;
 }
 
-
-/*.mobile-nav a:hover,
-.mobile-nav .active>a,
-.mobile-nav li:hover>a {
-color: #51adcf;
-border-color: #a5ecd7;
-text-decoration: underline;
-font-weight: bold;
-}*/
-
 .mobile-nav a:hover,
 .mobile-nav li:hover>a {
     color: #51adcf;
@@ -671,8 +661,10 @@ font-weight: bold;
     margin: 10px 0 0 0;
 }
 
-#hero .btn-get-started:hover {
-    background: #3291e6;
+.heroIcons {
+    max-width: 3rem;
+    padding-bottom: 2rem;
+    fill: #016390 !important;
 }
 
 
